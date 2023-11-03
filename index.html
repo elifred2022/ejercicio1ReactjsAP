@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nuevo Cliente</title>
+</head>
+<body>
+   <main >
+      <header>
+         <p class="logo">Seguro No Pagamos Cooperativa</p>
+         <nav>
+            <ul>
+               <li> <a href="#">Home</a> </li>
+               <li> <a href="#">Sobre nosotros</a> </li>
+               <li> <a href="#">Historia</a> </li>
+               <li> <a href="#">Contactenos</a> </li>
+            </ul>
+         </nav>
+         <div class="login">
+            <a class="login_a">Login</a>
+         </div>  
+      </header>
+      <form class="formulario" action="">
+         <label for="nombre">
+            <span>Nombres</span> 
+            <input type="text" id="nombre" placeholder="Ingrese Nombres" autocomplete="name" required>
+         </label>
+         <label for="nombre">
+            <span>Apellidos</span> 
+            <input type="text" id="apellido" placeholder="Ingrese Apellidos" autocomplete="apellido" required>
+         </label>
+         <label for="nombre">
+            <span>DNI</span> 
+            <input type="text" maxlength="8" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="dni" placeholder="ingrese DNI sin puntos" required>
+         </label>
+         <label for="corrreo">
+          <span>e-mail</span> 
+          <input type="email" id="email"placeholder="ej: seguro@nopagamos.com" autocomplete="email"required>
+         </label>
+         <label for="corrreo">
+            <span>Telefono</span> 
+            <input type="tel" id="telefono"placeholder="(Código de área) Número" autocomplete="telefono"required>
+        </label>
+         <label for="seguro">
+         <span>Tipo de Seguro</span> 
+            <select name="seguros" id="inputSeguro" onchange="valorSeguro()">
+                <option id="0" value="0">Seleccione seguro</option>
+                <option id="Basico" value="500">Basico</option>
+                <option id="Intermedio" value="1000">Intermedio</option>
+                <option id="Premiun" value="1500">Premiun</option>
+            </select>
+
+            <p id="valor" class="respuesta"></p>
+         </label>
+         
+         <input type="submit">
+         
+      </form>
+
+   </main>
+
+   <script src="valorSeguro.js"></script>
+</body>
+</html>

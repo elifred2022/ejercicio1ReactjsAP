@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:url("./img/seguro.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: sans-serif;
+ 
+}
+
+/* ESTILO HEADER */
+
+header {
+	background: #333;
+	opacity: 0.90;
+	display: flex;
+	text-decoration: none;
+	color: white;
+	justify-content: space-around;
+	
+}
+
+.logo {
+	padding: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+	padding: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: #333;
+	justify-content: center;
+	display: flex;
+  
+  }
+  
+  nav li a {
+	color: white;
+/*	display: block; */
+	text-decoration: none;
+	padding: .5em 1em;
+  }
+  
+  nav li a:hover {
+	background: tomato;
+	color: white;
+  }
+  
+  
+  /* @media-query */
+  
+  @media screen and (min-width: 480px) {
+	nav ul {
+	  display: flex;
+	  justify-content: center;
+	}
+	
+	nav li{
+		flex-grow:1;
+		text-align:center;
+	  }
+  }
+
+  img.icon{
+	width: 30px;
+	height: 40px;
+	border-radius: 50%;
+  }
+
+.login {
+	padding: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+}
+
+
+
+.login_a {
+	
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	color: white;
+	cursor:pointer;
+	
+
+	padding: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.login_a:hover {
+	background: tomato;
+	color: white;
+	padding: .5em 1em;
+  }
+
+
+  /*************************************/
+
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#c2c3ca;
+    position: relative;
+    top: 80px;
+}
+
+form label{
+	width:200px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    outline: none; /* para quitar el sombreado azul feo*/
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#333;
+} 
+
+form select {
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+    outline: none;
+}
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+	background: tomato;
+	color: white;
+}
