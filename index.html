@@ -23,26 +23,26 @@
             <a class="login_a">Login</a>
          </div>  
       </header>
-      <form class="formulario" action="">
+      <form action="" id="form" class="formulario"  >
          <label for="nombre">
             <span>Nombres</span> 
-            <input type="text" id="nombre" placeholder="Ingrese Nombres" autocomplete="name" required>
+            <input type="text" id="nombre" placeholder="Ingrese Nombres" autocomplete="name">
          </label>
          <label for="nombre">
             <span>Apellidos</span> 
-            <input type="text" id="apellido" placeholder="Ingrese Apellidos" autocomplete="apellido" required>
+            <input type="text" id="apellido" placeholder="Ingrese Apellidos" autocomplete="apellido">
          </label>
          <label for="nombre">
             <span>DNI</span> 
-            <input type="text" maxlength="8" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="dni" placeholder="ingrese DNI sin puntos" required>
+            <input type="text" maxlength="8" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="dni" placeholder="ingrese DNI sin puntos">
          </label>
          <label for="corrreo">
           <span>e-mail</span> 
-          <input type="email" id="email"placeholder="ej: seguro@nopagamos.com" autocomplete="email"required>
+          <input type="email" id="email"placeholder="ej: seguro@nopagamos.com" autocomplete="email">
          </label>
          <label for="corrreo">
             <span>Telefono</span> 
-            <input type="tel" id="telefono"placeholder="(Código de área) Número" autocomplete="telefono"required>
+            <input type="tel" id="telefono"placeholder="(Código de área) Número" autocomplete="telefono">
         </label>
          <label for="seguro">
          <span>Tipo de Seguro</span> 
